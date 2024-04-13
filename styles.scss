@@ -1,0 +1,55 @@
+@import 'variables';
+
+body {
+    background: $light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.qr-container {
+    width: fit-content;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 22px;
+    padding: 10px;
+    gap: 10px;
+
+    .img-container {
+        img {
+            height: 250px;
+            width: 250px;
+            border-radius: 12px;
+        }
+    }
+
+    .title-container {
+        &.outfit-700 {
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 18px;
+            padding-inline: 5px;
+            text-align: center;
+        }
+    }
+
+    .text-container {
+        color: $grayish-blue;
+
+        &.outfit-400 {
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            padding-inline: 5px;
+            text-align: center;
+            padding-bottom: 20px;
+            font-size: 14px;
+        }
+    }
+}
